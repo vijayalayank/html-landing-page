@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Calistoga&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Bungee+Tint&family=Calistoga&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Bungee+Tint&family=Calistoga&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Mooli&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    background-color: rgb(255, 252, 252);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#home{
+    /* border: 5px solid black; */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#home .homeimg{
+    width: 100%;
+    height: 100vh;
+}
+
+#home .head{
+    position: absolute;
+    top: 20%;
+    left: 4%;
+    padding: 10px;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: start;
+    /* border: 2px solid black; */
+}
+.head h1{
+    font-size: 80px;
+    font-family: "Kanit", sans-serif;
+    background-color: transparent;
+    transition: 0.4s;
+    cursor:default;
+}
+.head p{
+    color: rgb(255, 255, 255);
+    padding-bottom: 50px;
+    background-color: transparent;
+    margin-left: 10px;
+    font-family: "Mooli", sans-serif;
+}
+.head button a{
+        text-decoration: none;
+        color: rgb(0, 200, 255);
+        background-color: transparent;
+        font-size:17px;
+        font-family: "Roboto Mono", monospace;
+        transition: 0.5s;
+}
+.head button{
+    padding: 10px;
+    align-self: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: black;
+    border: 2px solid wheat;
+    width: 30%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.head button:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid black;
+}
+.head button:hover a{
+    color: white;
+}
+#home header{
+    position: absolute;
+    top: 0;
+    width: 100%;    
+    background-color: transparent;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.navli ul{
+    display: flex;
+    background-color: transparent;
+}
+.navli{
+    background-color: transparent;
+}
+.navli ul li{
+    margin-right: 100px;
+   margin-top: 25px;
+   list-style: none;
+   background-color: transparent;
+}
+.navli ul li a{
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: "Mooli", sans-serif;
+    transition: 0.5s;
+    padding: 10px;
+    border-radius: 10px;
+}
+.navli ul li a:hover{
+    background-color: lightblue;
+    border-radius:15px ;
+}
+html{
+    scroll-behavior: smooth;
+}
+.head h1:hover{
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+}
+.logo{
+    position: relative;
+    top: 10px;
+    width: 60%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+.logoimg{
+    background-color: transparent;
+}
+.logoimg img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+}
+.search{
+    
+    background-color: transparent;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    border-radius: 30px;
+    /* position: absolute; */
+    border: 2px solid black;
+    
+}
+.search img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.search input{
+    width: 95%;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: transparent;
+    
+    color: hsla(0, 0%, 0%, 0.5);
+}
+.search input:focus{
+    outline: none;
+}
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    position: absolute;
+    opacity: 0.5;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+footer > div{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    padding-top: 10px;
+    /* border: 2px solid red; */
+    background-color: transparent;
+}
+.footimg .mount{
+    width: 35%;
+    height: 35%;
+    float: left;
+    border-radius: 50%;
+}
+.footimg .eco{
+    width: 35%;
+    height: 35%;
+    float: left;
+    border-radius: 50%;
+}
+.footimg .compus{
+    width: 35%;
+    height: 35%;
+    float: left;
+    border-radius: 50%;
+}
+.footdes p{
+    position: absolute;
+    left: 35%;
+    padding: 10px;
+    font-family: "Mooli", sans-serif;
+    top: 10%;
+    border-radius: 10px;
+    background-color: hsla(0, 0%, 0%, 0.486);
+    color: white;
+}
+.footdes{
+    background-color: transparent;
+}
+.footimg img:hover{
+    box-shadow: 0 0 20px lightblue;
+    transition: 0.5s;
+}
